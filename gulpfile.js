@@ -37,8 +37,6 @@ var cleanCss = require("gulp-clean-css");
 var rename = require("gulp-rename");
 var uglify = require("gulp-uglify-es").default;
 var imagemin = require("gulp-imagemin");
-var webphtml = require("gulp-webp-html");
-var webpcss = require("gulp-webp-css");
 
 function browserSync(bs) {
   browsersync.init({
@@ -53,7 +51,6 @@ function browserSync(bs) {
 function html() {
   return src(path.src.html)
     .pipe(fileinclude())
-    //.pipe(webphtml())
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream());
 }
@@ -72,7 +69,6 @@ function css() {
         cascade: true,
       })
     )
-    //.pipe(webpcss())
     .pipe(cleanCss())
     .pipe(
       rename({
@@ -103,7 +99,7 @@ function images() {
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }],
         interlaced: true,
-        optimizationLevel: 3,
+        optimizationLevel: 2,
       })
     )
     .pipe(dest(path.build.img))
