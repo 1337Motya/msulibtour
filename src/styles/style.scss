@@ -1,0 +1,925 @@
+.preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2a3140;
+    opacity: .75;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    z-index: 100;
+
+    &_img {
+        width: 240px;
+        height: 180px;
+        background-image: url(../img/preview/gerb_gl.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: .8;
+    }
+
+    &_head {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    &_link {
+        padding: 10px 50px;
+        color: #fff;
+        border: 1px solid #fff;
+        font-size: 20px;
+    }
+}
+
+.slider {
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+
+    &__item {
+        height: 100vh;
+    }
+
+    #_fst {
+        background-image: url(../img/slider/slide1.png);
+    }
+    #_scnd {
+        background-image: url(../img/slider/slide2.png);
+    }
+    #_thd {
+        background-image: url(../img/slider/slide3.png);
+    }
+    #_frth {
+        background-image: url(../img/slider/slide4.png);
+    }
+}
+
+#rd_scene {
+    width: 100vw;
+    height: 100vh;
+}
+
+#train_scene {
+    width: 100vw;
+    height: 100vh;
+}
+
+//стили из старого проекта
+/*******************************************************************
+//_general.scss
+********************************************************************/
+body {
+    font-size: 10px;
+    color: #304054;
+    font-family: 'Roboto', sans-serif;
+}
+
+*:before, *:after {
+    z-index: -1;
+}
+* {
+    outline: none;
+}
+
+a {
+    color: #304054;
+    text-decoration: none;
+}
+
+.zero_opacity {
+    opacity: 0 !important;
+}
+
+/*******************************************************************
+//normalize.scss
+********************************************************************/
+
+html {
+	line-height: 1.15; /* 1 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+	margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+	box-sizing: content-box; /* 1 */
+	height: 0; /* 1 */
+	overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+	border-bottom: none; /* 1 */
+	text-decoration: underline; /* 2 */
+	text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+	font-family: monospace, monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+	border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+	box-sizing: border-box; /* 1 */
+	color: inherit; /* 2 */
+	display: table; /* 1 */
+	max-width: 100%; /* 1 */
+	padding: 0; /* 3 */
+	white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+	display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+	display: none;
+}
+/*******************************************************************
+//smart-grid.scss
+********************************************************************/
+$columns: 12;
+$atom: (100% / $columns);
+
+$break_xs: 20rem;
+$break_sm: 36rem;
+$break_md: 48rem;
+$break_lg: 62rem;
+$break_xl: 75rem;
+
+$offset: 1.875rem;
+$offset_xs: $offset;
+$offset_sm: $offset;
+$offset_md: $offset;
+$offset_lg: $offset;
+$offset_xl: $offset;
+
+$offset_one_side: ($offset / 2);
+$offset_xs_one_side: ($offset_xs / 2);
+$offset_sm_one_side: ($offset_sm / 2);
+$offset_md_one_side: ($offset_md / 2);
+$offset_lg_one_side: ($offset_lg / 2);
+$offset_xl_one_side: ($offset_xl / 2);
+
+$fields: 0.9375rem;
+
+@mixin container-full(){
+    padding-left: $fields;
+    padding-right: $fields;
+}
+
+@mixin row-offsets(){
+    margin-left: ($offset_one_side * -1);
+    margin-right: ($offset_one_side * -1);
+}
+
+@mixin col-offsets($type){
+    #{$type}-left: $offset_one_side;
+    #{$type}-right: $offset_one_side;
+}
+
+@mixin container(){
+    max-width: 1280px;
+    margin: 0 auto;
+    @include container-full();
+}
+
+@mixin row-flex(){
+    display: flex;
+    flex-wrap: wrap;
+    @include row-offsets();
+}
+
+@mixin row-float(){
+    @include row-offsets();
+    @include clearfix();
+}
+
+@mixin row-ib(){
+    @include row-offsets();
+}
+
+@mixin col(){
+    box-sizing: border-box;
+    word-wrap: break-word;
+    @include col-offsets(margin);
+}
+
+@mixin col-float(){
+    float: left;
+}
+
+@mixin col-ib(){
+    display: inline-block;
+    vertical-align: top;
+}
+
+@mixin col-padding(){
+    word-wrap: break-word;
+    @include col-offsets(padding);
+}
+
+@mixin size($n){
+    $val: 100% / $columns * $n;
+    width: #{calc(#{$val} - #{$offset})};
+}
+
+@mixin size-xs($n){
+    $val: 100% / $columns * $n;
+    @include xs(width, #{calc(#{$val} - #{$offset_xs})});
+}
+
+@mixin size-sm($n){
+    $val: 100% / $columns * $n;
+    @include sm(width, #{calc(#{$val} - #{$offset_sm})});
+}
+
+@mixin size-md($n){
+    $val: 100% / $columns * $n;
+    @include md(width, #{calc(#{$val} - #{$offset_md})});
+}
+
+@mixin size-lg($n){
+    $val: 100% / $columns * $n;
+    @include lg(width, #{calc(#{$val} - #{$offset_lg})});
+}
+
+@mixin size-xl($n){
+    $val: 100% / $columns * $n;
+    @include xl(width, #{calc(#{$val} - #{$offset_xl})});
+}
+
+@mixin shift($n){
+    $val: 100% / $columns * $n;
+    margin-left: #{calc(#{$val} + #{$offset_one_side})};
+    margin-right: #{calc(#{$val} + #{$offset_one_side})};
+}
+
+@mixin shift-left($n){
+    $val: 100% / $columns * $n;
+    margin-left: #{calc(#{$val} + #{$offset_one_side})};
+}
+
+@mixin shift-right($n){
+    $val: 100% / $columns * $n;
+    margin-right: #{calc(#{$val} + #{$offset_one_side})};
+}
+
+@mixin shift-padding($n){
+    $val: 100% / $columns * $n;
+    padding-left: #{calc(#{$val} + #{$offset_one_side})};
+    padding-right: #{calc(#{$val} + #{$offset_one_side})};
+}
+
+@mixin shift-padding-left($n){
+    $val: 100% / $columns * $n;
+    padding-left: #{calc(#{$val} + #{$offset_one_side})};
+}
+
+@mixin shift-padding-right($n){
+    $val: 100% / $columns * $n;
+    padding-right: #{calc(#{$val} + #{$offset_one_side})};
+}
+
+@mixin shift-xs($n){
+    $val: 100% / $columns * $n;
+    @include xs(margin-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+    @include xs(margin-right, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-left($n){
+    $val: 100% / $columns * $n;
+    @include xs(margin-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-right($n){
+    $val: 100% / $columns * $n;
+    @include xs(margin-right, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-padding($n){
+    $val: 100% / $columns * $n;
+    @include xs(padding-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+    @include xs(padding-right, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include xs(padding-left, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-xs-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include xs(padding-right, #{calc(#{$val} + #{$offset_xs_one_side})});
+}
+
+@mixin shift-sm($n){
+    $val: 100% / $columns * $n;
+    @include sm(margin-left, #{calc(#{$val} + #{$offset_sm_one_side})});
+    @include sm(margin-right, #{calc(#{$val} + #{$offset_sm_one_side})});
+}
+
+@mixin shift-sm-left($n){
+    $val: 100% / $columns * $n;
+    @include sm(margin-left, #{calc(#{$val} + #{$offset_sm_one_side})});
+}
+
+@mixin shift-sm-right($n){
+    $val: 100% / $columns * $n;
+    @include sm(margin-right, #{calc(#{$val} + #{$offset_sm_one_side})});
+}
+
+@mixin shift-sm-padding($n){
+    $val: 100% / $columns * $n;
+    @include sm(padding-left, #{calc(#{$val} + #{$offset_sm_one_side})});
+    @include sm(padding-right, #{calc(#{$val} + #{$offset_sm_one_side})});
+}
+
+@mixin shift-sm-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include sm(padding-left, #{calc(#{$val} + #{$offset_sm_one_side})});
+}
+
+@mixin shift-sm-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include sm(padding-right, #{calc(#{$val} + #{$offset_sm_one_side})});
+}
+
+@mixin shift-md($n){
+    $val: 100% / $columns * $n;
+    @include md(margin-left, #{calc(#{$val} + #{$offset_md_one_side})});
+    @include md(margin-right, #{calc(#{$val} + #{$offset_md_one_side})});
+}
+
+@mixin shift-md-left($n){
+    $val: 100% / $columns * $n;
+    @include md(margin-left, #{calc(#{$val} + #{$offset_md_one_side})});
+}
+
+@mixin shift-md-right($n){
+    $val: 100% / $columns * $n;
+    @include md(margin-right, #{calc(#{$val} + #{$offset_md_one_side})});
+}
+
+@mixin shift-md-padding($n){
+    $val: 100% / $columns * $n;
+    @include md(padding-left, #{calc(#{$val} + #{$offset_md_one_side})});
+    @include md(padding-right, #{calc(#{$val} + #{$offset_md_one_side})});
+}
+
+@mixin shift-md-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include md(padding-left, #{calc(#{$val} + #{$offset_md_one_side})});
+}
+
+@mixin shift-md-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include md(padding-right, #{calc(#{$val} + #{$offset_md_one_side})});
+}
+
+@mixin shift-lg($n){
+    $val: 100% / $columns * $n;
+    @include lg(margin-left, #{calc(#{$val} + #{$offset_lg_one_side})});
+    @include lg(margin-right, #{calc(#{$val} + #{$offset_lg_one_side})});
+}
+
+@mixin shift-lg-left($n){
+    $val: 100% / $columns * $n;
+    @include lg(margin-left, #{calc(#{$val} + #{$offset_lg_one_side})});
+}
+
+@mixin shift-lg-right($n){
+    $val: 100% / $columns * $n;
+    @include lg(margin-right, #{calc(#{$val} + #{$offset_lg_one_side})});
+}
+
+@mixin shift-lg-padding($n){
+    $val: 100% / $columns * $n;
+    @include lg(padding-left, #{calc(#{$val} + #{$offset_lg_one_side})});
+    @include lg(padding-right, #{calc(#{$val} + #{$offset_lg_one_side})});
+}
+
+@mixin shift-lg-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include lg(padding-left, #{calc(#{$val} + #{$offset_lg_one_side})});
+}
+
+@mixin shift-lg-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include lg(padding-right, #{calc(#{$val} + #{$offset_lg_one_side})});
+}
+
+@mixin shift-xl($n){
+    $val: 100% / $columns * $n;
+    @include xl(margin-left, #{calc(#{$val} + #{$offset_xl_one_side})});
+    @include xl(margin-right, #{calc(#{$val} + #{$offset_xl_one_side})});
+}
+
+@mixin shift-xl-left($n){
+    $val: 100% / $columns * $n;
+    @include xl(margin-left, #{calc(#{$val} + #{$offset_xl_one_side})});
+}
+
+@mixin shift-xl-right($n){
+    $val: 100% / $columns * $n;
+    @include xl(margin-right, #{calc(#{$val} + #{$offset_xl_one_side})});
+}
+
+@mixin shift-xl-padding($n){
+    $val: 100% / $columns * $n;
+    @include xl(padding-left, #{calc(#{$val} + #{$offset_xl_one_side})});
+    @include xl(padding-right, #{calc(#{$val} + #{$offset_xl_one_side})});
+}
+
+@mixin shift-xl-padding-left($n){
+    $val: 100% / $columns * $n;
+    @include xl(padding-left, #{calc(#{$val} + #{$offset_xl_one_side})});
+}
+
+@mixin shift-xl-padding-right($n){
+    $val: 100% / $columns * $n;
+    @include xl(padding-right, #{calc(#{$val} + #{$offset_xl_one_side})});
+}
+
+@mixin xs($name, $value){
+    @media screen and (min-width: $break_xs){
+        #{$name}: $value;
+    }
+}
+
+@mixin xs-block(){
+    @media screen and (min-width: $break_xs){
+        @content;
+    }
+}
+
+@mixin sm($name, $value){
+    @media screen and (min-width: $break_sm){
+        #{$name}: $value;
+    }
+}
+
+@mixin sm-block(){
+    @media screen and (min-width: $break_sm){
+        @content;
+    }
+}
+
+@mixin md($name, $value){
+    @media screen and (min-width: $break_md){
+        #{$name}: $value;
+    }
+}
+
+@mixin md-block(){
+    @media screen and (min-width: $break_md){
+        @content;
+    }
+}
+
+@mixin lg($name, $value){
+    @media screen and (min-width: $break_lg){
+        #{$name}: $value;
+    }
+}
+
+@mixin lg-block(){
+    @media screen and (min-width: $break_lg){
+        @content;
+    }
+}
+
+@mixin xl($name, $value){
+    @media screen and (min-width: $break_xl){
+        #{$name}: $value;
+    }
+}
+
+@mixin xl-block(){
+    @media screen and (min-width: $break_xl){
+        @content;
+    }
+}
+
+@mixin from($min_width){
+    @media screen and (min-width: $min_width){
+        @content;
+    }
+}
+
+@mixin to($max_width){
+    @media screen and (max-width: $max_width){
+        @content;
+    }
+}
+
+@mixin from-to($min_width, $max_width){
+    @media screen and (min-width: $min_width) and (max-width: $max_width){
+        @content;
+    }
+}
+
+@mixin u-row-flex($offset){
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: ($offset / -2);
+    margin-right: ($offset / -2);
+}
+
+@mixin u-col($offset){
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: ($offset / 2);
+    margin-right: ($offset / 2);
+}
+
+@mixin u-size($n, $columns, $offset){
+    width: #{calc(100% / #{$columns} * #{$n} - #{$offset})};
+}
+
+@mixin reset(){
+    body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,input,textarea,p,blockquote,th,td{
+        margin: 0;
+        padding: 0;
+    }
+    table{
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    fieldset,img,abbr{
+        border: 0;
+    }
+    address,caption,cite,code,dfn,em,strong,th,var{
+        font-style: normal;
+        font-weight: normal;
+    }
+    ul li{
+        list-style: none;
+    }
+    caption,th{
+        text-align: left;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-size: 100%;
+        font-weight: normal;
+    }
+    sup{
+        vertical-align: text-top;
+    }
+    sub{
+        vertical-align: text-bottom;
+    }
+    input,textarea,select{
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+    legend{
+        color: #000;
+    }
+    article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main{
+        display: block;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@mixin debug($background, $outline){
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    
+    > div{
+        height: inherit;
+        @include container();
+        
+        > div{
+            height: inherit;
+            @include row-flex();
+            
+            > div{
+                @include col();
+                @include size(1);
+                height: inherit;
+                outline: $outline;
+                background: $background;
+            }
+        }
+    }
+}
+
+@mixin clearfix(){
+    &::after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@function rem($px) {
+    @return ($px / 16) +rem;
+}
