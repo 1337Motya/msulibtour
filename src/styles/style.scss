@@ -38,13 +38,14 @@ body {
     padding: 10px 50px;
     color: #fff;
     border: 1px solid #fff;
-    font-size: 20px;
+    
   }
 
   a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px; 
   }
+  
 }
 
 .slider {
@@ -81,4 +82,38 @@ body {
 #train_scene {
   width: 100vw;
   height: 100vh;
+}
+
+@media screen and (min-width: 2560px) {
+  .preview {
+    &_img {
+      width: 480px;
+      height: 360px;
+    }
+
+    &_head {
+      font-size: 65px;
+    }
+
+    a {
+      font-size: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  .preview {
+    &_img {
+      width: 720px;
+      height: 540px;
+    }
+
+    &_head {
+      font-size: 95px;
+    }
+
+    a {
+      font-size: 65px;
+    }
+  }
 }
