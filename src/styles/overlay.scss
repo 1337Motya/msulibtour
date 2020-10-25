@@ -127,7 +127,7 @@
             position: relative;
             opacity: 0;
             width: 100%;
-            a {
+            .menu_links {
                 display: inline-block;
                 border: 1px solid rgba(255, 255, 255, 0.09);
                 color: #fff;
@@ -162,5 +162,44 @@
         opacity: 1;
         left: 0;
         transform: rotate(0deg);
+    }
+}
+
+
+
+//Mobile
+@media screen and (max-width: 768px) {
+    .overlay {
+        .overlayMenu {
+            right: 5vw;
+
+            ul {
+                li {
+                    .menu_links {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    .navBurger {
+        left: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .overlay {
+        .overlayMenu {
+            right: 5vw;
+
+            ul {
+                li {
+                    .menu_links {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
 }
