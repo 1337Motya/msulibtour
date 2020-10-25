@@ -1,0 +1,5 @@
+# igore modules
+node_modules
+
+#ignore dist
+dist
