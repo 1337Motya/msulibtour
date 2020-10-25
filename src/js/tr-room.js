@@ -2,6 +2,7 @@ pannellum.viewer('train_scene', {
     "autoLoad": true,
     "showControls": false,
     "compass": false,
+    "hfov": 180,
     "default": {
         "firstScene": "fsttrain",
     },
@@ -10,6 +11,7 @@ pannellum.viewer('train_scene', {
         "fsttrain": {
             "type": "equirectangular",
             "panorama": "../img/train-room/1.jpg",
+            'yaw': 60,
             "hotSpots": [
                 {
                     "pitch": -5,
@@ -127,6 +129,7 @@ pannellum.viewer('train_scene', {
         "ffthtrain": {
             "type": "equirectangular",
             "panorama": "../img/train-room/5.jpg",
+            "yaw": 130,
             "hotSpots": [
                 {
                     "pitch": -9,

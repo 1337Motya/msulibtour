@@ -2,6 +2,7 @@ pannellum.viewer('rd_scene', {
     "autoLoad": true,
     "showControls": false,
     "compass": false,
+    "hfov": 180,
     "default": {
         "firstScene": "fst",
     },
@@ -23,6 +24,7 @@ pannellum.viewer('rd_scene', {
         "scnd": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/2.jpg",
+            "yaw": 180,
             "hotSpots": [
                 {
                     "pitch": 0,
@@ -99,6 +101,7 @@ pannellum.viewer('rd_scene', {
         "frth": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/4.jpg",
+            "yaw": -100,
             "hotSpots": [
                 {
                     "pitch": -12,
@@ -150,6 +153,7 @@ pannellum.viewer('rd_scene', {
         "ffth": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/5.jpg",
+            "yaw": 70,
             "hotSpots": [
                 {
                     "pitch": 0,
