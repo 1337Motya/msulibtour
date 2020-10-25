@@ -53,7 +53,10 @@ body {
   height: 100vh;
 
   &__item {
+    width: 100vw;
     height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   #_fst {
