@@ -1,5 +1,5 @@
 pannellum.viewer('train_scene', {
-    "autoLoad": true,
+    "autoLoad": true,   
     "showControls": false,
     "compass": false,
     "hfov": 180,
@@ -72,6 +72,12 @@ pannellum.viewer('train_scene', {
                     "yaw": 264,
                     "type": "info",
                     "text": "Выставка новых учебных изданий"
+                },
+                {
+                    "pitch": 2,
+                    "yaw": 84,
+                    "type": "info",
+                    "text": "Администрация библиотеки"
                 }
             ]
         },
@@ -124,6 +130,12 @@ pannellum.viewer('train_scene', {
                     "yaw": 340,
                     "type": "info",
                     "text": "Фонд учебной, учебно-методической литературы"
+                },
+                {
+                    "pitch": 2,
+                    "yaw": 108,
+                    "type": "info",
+                    "text": "Администрация библиотеки"
                 }
             ]
         },
@@ -145,6 +157,12 @@ pannellum.viewer('train_scene', {
                     "type": "scene",
                     "text": "Начало коридора",
                     "sceneId": "thrdtrain"
+                },
+                {
+                    "pitch": -4,
+                    "yaw": -16,
+                    "type": "info",
+                    "text": "Отдел формирования информационных ресурсов"
                 }
             ]
         },

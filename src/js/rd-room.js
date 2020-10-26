@@ -179,7 +179,8 @@ pannellum.viewer('rd_scene', {
                     "pitch": 0,
                     "yaw": 180,
                     "type": "info",
-                    "text": "Поддержка публикационной активности преподавателей в web-рейтингах"
+                    "text": "Поддержка публикационной активности преподавателей в web-рейтингах",
+                    "URL": "https://www.elibrary.ru/authors.asp"
                 }
             ]
         }
