@@ -11,7 +11,7 @@ pannellum.viewer('rd_scene', {
     "scenes": {
         "corridor": {
             "type": "equirectangular",
-            "panorama": "../img/rd-room/1.jpg",
+            "panorama": "../img/reading-hall/1.jpg",
             "hotSpots": [
                 {
                     "pitch": 0,
@@ -24,7 +24,7 @@ pannellum.viewer('rd_scene', {
         },
         "reception": {
             "type": "equirectangular",
-            "panorama": "../img/rd-room/2.jpg",
+            "panorama": "../img/reading-hall/2.jpg",
             "yaw": 180,
             "hotSpots": [
                 {
@@ -63,7 +63,7 @@ pannellum.viewer('rd_scene', {
         },
         "hall": {
             "type": "equirectangular",
-            "panorama": "../img/rd-room/3.jpg",
+            "panorama": "../img/reading-hall/3.jpg",
             "hotSpots": [
                 {
                     "pitch": -12,
@@ -101,7 +101,7 @@ pannellum.viewer('rd_scene', {
         },
         "hall_center": {
             "type": "equirectangular",
-            "panorama": "../img/rd-room/4.jpg",
+            "panorama": "../img/reading-hall/4.jpg",
             "yaw": -100,
             "hotSpots": [
                 {
@@ -153,7 +153,7 @@ pannellum.viewer('rd_scene', {
         },
         "professor_reading_room": {
             "type": "equirectangular",
-            "panorama": "../img/rd-room/5.jpg",
+            "panorama": "../img/reading-hall/5.jpg",
             "yaw": 70,
             "hotSpots": [
                 {
