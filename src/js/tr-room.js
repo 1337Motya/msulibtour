@@ -5,11 +5,11 @@ pannellum.viewer('train_scene', {
     "hfov": 180,
     "autoRotate": -2,
     "default": {
-        "firstScene": "fsttrain",
+        "firstScene": "second_floor",
     },
 
     "scenes": {
-        "fsttrain": {
+        "second_floor": {
             "type": "equirectangular",
             "panorama": "../img/train-room/1.jpg",
             'yaw': 60,
@@ -19,14 +19,14 @@ pannellum.viewer('train_scene', {
                     "yaw": 58,
                     "type": "scene",
                     "text": "Абонемент учебной литературы",
-                    "sceneId": "scndtrain"
+                    "sceneId": "educational_literature"
                 },
                 {
                     "pitch": -5,
                     "yaw": 40,
                     "type": "scene",
                     "text": "Лестница вниз",
-                    "sceneId": "thrdtrain"
+                    "sceneId": "first_floor_corridor_start"
                 },
                 {
                     "pitch": 7,
@@ -44,7 +44,7 @@ pannellum.viewer('train_scene', {
                 }
             ]
         },
-        "scndtrain": {
+        "educational_literature": {
             "type": "equirectangular",
             "panorama": "../img/train-room/2.jpg",
             "hotSpots": [
@@ -53,7 +53,7 @@ pannellum.viewer('train_scene', {
                     "yaw": 172,
                     "type": "scene",
                     "text": "Коридор",
-                    "sceneId": "fsttrain"
+                    "sceneId": "second_floor"
                 },
                 {
                     "pitch": -7,
@@ -81,7 +81,7 @@ pannellum.viewer('train_scene', {
                 }
             ]
         },
-        "thrdtrain": {
+        "first_floor_corridor_start": {
             "type": "equirectangular",
             "panorama": "../img/train-room/3.jpg",
             "hotSpots": [
@@ -90,25 +90,25 @@ pannellum.viewer('train_scene', {
                     "yaw": -11,
                     "type": "scene",
                     "text": "Лестница наверх",
-                    "sceneId": "fsttrain"
+                    "sceneId": "second_floor"
                 },
                 {
                     "pitch": 2,
                     "yaw": 1,
                     "type": "scene",
                     "text": "Абонемент научной и художественной литературы",
-                    "sceneId": "frthtrain"
+                    "sceneId": "scientific_literature"
                 },
                 {
                     "pitch": -8,
                     "yaw": 180,
                     "type": "scene",
                     "text": "Конец коридора",
-                    "sceneId": "ffthtrain"
+                    "sceneId": "first_floor_corridor_end"
                 }
             ]
         },
-        "frthtrain": {
+        "scientific_literature": {
             "type": "equirectangular",
             "panorama": "../img/train-room/4.jpg",
             "hotSpots": [
@@ -117,7 +117,7 @@ pannellum.viewer('train_scene', {
                     "yaw": 181,
                     "type": "scene",
                     "text": "Коридор",
-                    "sceneId": "thrdtrain"
+                    "sceneId": "first_floor_corridor_start"
                 },
                 {
                     "pitch": -9,
@@ -139,7 +139,7 @@ pannellum.viewer('train_scene', {
                 }
             ]
         },
-        "ffthtrain": {
+        "first_floor_corridor_end": {
             "type": "equirectangular",
             "panorama": "../img/train-room/5.jpg",
             "yaw": 130,
@@ -149,14 +149,14 @@ pannellum.viewer('train_scene', {
                     "yaw": 146,
                     "type": "scene",
                     "text": "Читальный зал редких изданий",
-                    "sceneId": "sixthtrain"
+                    "sceneId": "rare_publications"
                 },
                 {
                     "pitch": -3,
                     "yaw": 1,
                     "type": "scene",
                     "text": "Начало коридора",
-                    "sceneId": "thrdtrain"
+                    "sceneId": "first_floor_corridor_start"
                 },
                 {
                     "pitch": -4,
@@ -166,7 +166,7 @@ pannellum.viewer('train_scene', {
                 }
             ]
         },
-        "sixthtrain": {
+        "rare_publications": {
             "type": "equirectangular",
             "panorama": "../img/train-room/6.jpg",
             "hotSpots": [
@@ -175,7 +175,7 @@ pannellum.viewer('train_scene', {
                     "yaw": 70,
                     "type": "scene",
                     "text": "Коридор",
-                    "sceneId": "ffthtrain"
+                    "sceneId": "first_floor_corridor_end"
                 },
                 {
                     "pitch": 2,
