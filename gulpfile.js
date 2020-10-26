@@ -37,6 +37,8 @@ var cleanCss = require("gulp-clean-css");
 var rename = require("gulp-rename");
 var uglify = require("gulp-uglify-es").default;
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
+var webpcss = require("gulp-webp-css");
 
 function browserSync(bs) {
   browsersync.init({
@@ -69,6 +71,7 @@ function css() {
         cascade: true,
       })
     )
+    .pipe(webpcss())
     .pipe(cleanCss())
     .pipe(
       rename({
@@ -94,6 +97,11 @@ function js() {
 
 function images() {
   return src(path.src.img)
+    .pipe(webp({
+      quality: 70
+    }))
+    .pipe(dest(path.build.img))
+    .pipe(src(path.src.img))
     .pipe(
       imagemin({
         progressive: true,

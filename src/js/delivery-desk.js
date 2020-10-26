@@ -1,3 +1,5 @@
+var extesion = localStorage.webpSupport === false ? 'jpg' : 'webp';
+
 pannellum.viewer('train_scene', {
     "autoLoad": true,   
     "showControls": false,
@@ -11,7 +13,7 @@ pannellum.viewer('train_scene', {
     "scenes": {
         "second_floor": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/1.jpg",
+            "panorama": "../img/delivery-desk/1." + extesion,
             'yaw': 60,
             "hotSpots": [
                 {
@@ -46,7 +48,7 @@ pannellum.viewer('train_scene', {
         },
         "educational_literature": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/2.jpg",
+            "panorama": "../img/delivery-desk/2." + extesion,
             "hotSpots": [
                 {
                     "pitch": -13,
@@ -83,7 +85,7 @@ pannellum.viewer('train_scene', {
         },
         "first_floor_corridor_start": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/3.jpg",
+            "panorama": "../img/delivery-desk/3." + extesion,
             "hotSpots": [
                 {
                     "pitch": 2,
@@ -110,7 +112,7 @@ pannellum.viewer('train_scene', {
         },
         "scientific_literature": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/4.jpg",
+            "panorama": "../img/delivery-desk/4." + extesion,
             "hotSpots": [
                 {
                     "pitch": -9,
@@ -141,7 +143,7 @@ pannellum.viewer('train_scene', {
         },
         "first_floor_corridor_end": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/5.jpg",
+            "panorama": "../img/delivery-desk/5." + extesion,
             "yaw": 130,
             "hotSpots": [
                 {
@@ -168,7 +170,7 @@ pannellum.viewer('train_scene', {
         },
         "rare_publications": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/6.jpg",
+            "panorama": "../img/delivery-desk/6." + extesion,
             "hotSpots": [
                 {
                     "pitch": -5,

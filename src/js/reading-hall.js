@@ -1,3 +1,6 @@
+
+var extesion = localStorage.webpSupport === false ? 'jpg' : 'webp';
+
 pannellum.viewer('rd_scene', {
     "autoLoad": true,
     "showControls": false,
@@ -11,7 +14,7 @@ pannellum.viewer('rd_scene', {
     "scenes": {
         "corridor": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/1.jpg",
+            "panorama": "../img/reading-hall/1." + extesion,
             "hotSpots": [
                 {
                     "pitch": 0,
@@ -24,7 +27,7 @@ pannellum.viewer('rd_scene', {
         },
         "reception": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/2.jpg",
+            "panorama": "../img/reading-hall/2." + extesion,
             "yaw": 180,
             "hotSpots": [
                 {
@@ -63,7 +66,7 @@ pannellum.viewer('rd_scene', {
         },
         "hall": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/3.jpg",
+            "panorama": "../img/reading-hall/3.webp",
             "hotSpots": [
                 {
                     "pitch": -12,
@@ -101,7 +104,7 @@ pannellum.viewer('rd_scene', {
         },
         "hall_center": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/4.jpg",
+            "panorama": "../img/reading-hall/4." + extesion,
             "yaw": -100,
             "hotSpots": [
                 {
@@ -153,7 +156,7 @@ pannellum.viewer('rd_scene', {
         },
         "professor_reading_room": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/5.jpg",
+            "panorama": "../img/reading-hall/5." + extesion,
             "yaw": 70,
             "hotSpots": [
                 {
