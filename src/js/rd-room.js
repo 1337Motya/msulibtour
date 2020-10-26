@@ -5,11 +5,11 @@ pannellum.viewer('rd_scene', {
     "hfov": 180,
     "autoRotate": -2,
     "default": {
-        "firstScene": "fst",
+        "firstScene": "corridor",
     },
 
     "scenes": {
-        "fst": {
+        "corridor": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/1.jpg",
             "hotSpots": [
@@ -18,11 +18,11 @@ pannellum.viewer('rd_scene', {
                     "yaw": 370,
                     "type": "scene",
                     "text": "Читальный зал",
-                    "sceneId": "scnd"
+                    "sceneId": "reception"
                 }
             ]
         },
-        "scnd": {
+        "reception": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/2.jpg",
             "yaw": 180,
@@ -32,7 +32,7 @@ pannellum.viewer('rd_scene', {
                     "yaw": -7,
                     "type": "scene",
                     "text": "Коридор",
-                    "sceneId": "fst"
+                    "sceneId": "corridor"
                 },
                 {
                     "pitch": -8,
@@ -57,11 +57,11 @@ pannellum.viewer('rd_scene', {
                     "yaw": 180,
                     "type": "scene",
                     "text": "Зал",
-                    "sceneId": "thrd"
+                    "sceneId": "hall"
                 }
             ]
         },
-        "thrd": {
+        "hall": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/3.jpg",
             "hotSpots": [
@@ -70,14 +70,14 @@ pannellum.viewer('rd_scene', {
                     "yaw": 224,
                     "type": "scene",
                     "text": "Холл",
-                    "sceneId": "scnd"
+                    "sceneId": "reception"
                 },
                 {
                     "pitch": -12,
                     "yaw": 46,
                     "type": "scene",
                     "text": "Центр",
-                    "sceneId": "frth"
+                    "sceneId": "hall_center"
                 },
                 {
                     "pitch": 4,
@@ -99,7 +99,7 @@ pannellum.viewer('rd_scene', {
                 }
             ]
         },
-        "frth": {
+        "hall_center": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/4.jpg",
             "yaw": -100,
@@ -108,14 +108,14 @@ pannellum.viewer('rd_scene', {
                     "pitch": -12,
                     "yaw": 145,
                     "type": "scene",
-                    "sceneId": "thrd"
+                    "sceneId": "hall"
                 },
                 {
                     "pitch": 0,
                     "yaw": 78,
                     "type": "scene",
                     "text": "Читальный зал для преподавателей",
-                    "sceneId": "ffth"
+                    "sceneId": "professor_reading_room"
                 },
                 {
                     "pitch": -2,
@@ -151,7 +151,7 @@ pannellum.viewer('rd_scene', {
                 }
             ]
         },
-        "ffth": {
+        "professor_reading_room": {
             "type": "equirectangular",
             "panorama": "../img/rd-room/5.jpg",
             "yaw": 70,
@@ -161,7 +161,7 @@ pannellum.viewer('rd_scene', {
                     "yaw": 118,
                     "type": "scene",
                     "text": "Читальный зал",
-                    "sceneId": "frth"
+                    "sceneId": "hall_center"
                 },
                 {
                     "pitch": 0,
