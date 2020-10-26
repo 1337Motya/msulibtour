@@ -3,6 +3,7 @@ pannellum.viewer('rd_scene', {
     "showControls": false,
     "compass": false,
     "hfov": 180,
+    "autoRotate": -2,
     "default": {
         "firstScene": "fst",
     },
