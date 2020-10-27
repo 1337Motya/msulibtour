@@ -85,7 +85,7 @@ pannellum.viewer('train_scene', {
         },
         "first_floor_corridor_start": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/3." + extesion,
+            "panorama": "../img/delivery-desk/3." + extension,
             "hotSpots": [
                 {
                     "pitch": 2,
