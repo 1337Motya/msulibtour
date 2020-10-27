@@ -1,5 +1,4 @@
-
-var extesion = localStorage.webpSupport === false ? 'jpg' : 'webp';
+var extension = sessionStorage.webpSupport === 'true' ? 'webp' : 'jpg';
 
 pannellum.viewer('rd_scene', {
     "autoLoad": true,
@@ -14,7 +13,7 @@ pannellum.viewer('rd_scene', {
     "scenes": {
         "corridor": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/1." + extesion,
+            "panorama": "../img/reading-hall/1." + extension,
             "hotSpots": [
                 {
                     "pitch": 0,
@@ -27,7 +26,7 @@ pannellum.viewer('rd_scene', {
         },
         "reception": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/2." + extesion,
+            "panorama": "../img/reading-hall/2." + extension,
             "yaw": 180,
             "hotSpots": [
                 {
@@ -66,7 +65,7 @@ pannellum.viewer('rd_scene', {
         },
         "hall": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/3.webp",
+            "panorama": "../img/reading-hall/3." + extension,
             "hotSpots": [
                 {
                     "pitch": -12,
@@ -104,7 +103,7 @@ pannellum.viewer('rd_scene', {
         },
         "hall_center": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/4." + extesion,
+            "panorama": "../img/reading-hall/4." + extension,
             "yaw": -100,
             "hotSpots": [
                 {
@@ -156,7 +155,7 @@ pannellum.viewer('rd_scene', {
         },
         "professor_reading_room": {
             "type": "equirectangular",
-            "panorama": "../img/reading-hall/5." + extesion,
+            "panorama": "../img/reading-hall/5." + extension,
             "yaw": 70,
             "hotSpots": [
                 {

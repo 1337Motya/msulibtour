@@ -1,7 +1,7 @@
-var extesion = localStorage.webpSupport === false ? 'jpg' : 'webp';
+var extension = sessionStorage.webpSupport === 'true' ? 'webp' : 'jpg';
 
 pannellum.viewer('train_scene', {
-    "autoLoad": true,   
+    "autoLoad": true,
     "showControls": false,
     "compass": false,
     "hfov": 180,
@@ -13,7 +13,7 @@ pannellum.viewer('train_scene', {
     "scenes": {
         "second_floor": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/1." + extesion,
+            "panorama": "../img/delivery-desk/1." + extension,
             'yaw': 60,
             "hotSpots": [
                 {
@@ -48,7 +48,7 @@ pannellum.viewer('train_scene', {
         },
         "educational_literature": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/2." + extesion,
+            "panorama": "../img/delivery-desk/2." + extension,
             "hotSpots": [
                 {
                     "pitch": -13,
@@ -112,7 +112,7 @@ pannellum.viewer('train_scene', {
         },
         "scientific_literature": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/4." + extesion,
+            "panorama": "../img/delivery-desk/4." + extension,
             "hotSpots": [
                 {
                     "pitch": -9,
@@ -143,7 +143,7 @@ pannellum.viewer('train_scene', {
         },
         "first_floor_corridor_end": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/5." + extesion,
+            "panorama": "../img/delivery-desk/5." + extension,
             "yaw": 130,
             "hotSpots": [
                 {
@@ -170,7 +170,7 @@ pannellum.viewer('train_scene', {
         },
         "rare_publications": {
             "type": "equirectangular",
-            "panorama": "../img/delivery-desk/6." + extesion,
+            "panorama": "../img/delivery-desk/6." + extension,
             "hotSpots": [
                 {
                     "pitch": -5,

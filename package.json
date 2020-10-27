@@ -21,11 +21,11 @@
     "gulp-sass": "^4.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-uglify-es": "^2.0.0",
+    "gulp-webp": "^4.0.1",
     "gulp-webp-css": "^1.1.0",
-    "gulp-webp-html": "^1.0.2",
-    "gulp-webpcss": "^1.1.1"
+    "gulp-webp-html": "^1.0.2"
   },
   "dependencies": {
-    "gulp-webp": "^4.0.1"
+    "modernizr": "^3.11.3"
   }
 }
