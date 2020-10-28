@@ -61,7 +61,8 @@ pannellum.viewer('train_scene', {
                     "pitch": -7,
                     "yaw": 360,
                     "type": "info",
-                    "text": "Кафедра обслуживания пользователей"
+                    "text": "Кафедра обслуживания пользователей",
+                    "URL": "https://catalog.msu.by/opac/app/webroot/index.php"
                 },
                 {
                     "pitch": 6,
@@ -125,7 +126,8 @@ pannellum.viewer('train_scene', {
                     "pitch": -9,
                     "yaw": 359,
                     "type": "info",
-                    "text": "Кафедра обслуживания пользователей"
+                    "text": "Кафедра обслуживания пользователей",
+                    "URL": "https://catalog.msu.by/opac/app/webroot/index.php"
                 },
                 {
                     "pitch": 6,
