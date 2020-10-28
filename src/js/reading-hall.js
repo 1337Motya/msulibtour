@@ -147,7 +147,7 @@ pannellum.viewer('rd_scene', {
                 },
                 {
                     "pitch": 4,
-                    "yaw": 60,
+                    "yaw": 42,
                     "type": "info",
                     "text": "Фотовыставки. Экскурсии. Презентации"
                 }
