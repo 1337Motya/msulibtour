@@ -12,7 +12,7 @@
 .navBurger {
   position: fixed;
   left: 40px;
-  top: 50px;
+  top: 40px;
   cursor: pointer;
   background: #3A649E;
   -webkit-box-sizing: border-box;
@@ -76,37 +76,37 @@
 
 @keyframes menuAnimate {
   0% {
-    top: 50px;
+    top: 40px;
   }
   10% {
-    top: 40px;
+    top: 30px;
   }
   20% {
-    top: 50px;
+    top: 40px;
   }
   30% {
-    top: 40px;
+    top: 30px;
   }
   40% {
-    top: 50px;
+    top: 40px;
   }
   50% {
-    top: 40px;
+    top: 30px;
   }
   60% {
-    top: 50px;
+    top: 40px;
   }
   70% {
-    top: 40px;
+    top: 30px;
   }
   80% {
-    top: 50px;
-  }
-  90% {
     top: 40px;
   }
+  90% {
+    top: 30px;
+  }
   100% {
-    top: 50px;
+    top: 40px;
   }
 }
 
@@ -289,6 +289,9 @@
 
 //Mobile
 @media screen and (max-width: 768px) {
+  .navBurger {
+    top: 30px;
+  }
   .overlay {
     .overlayMenu {
       right: 5vw;
@@ -306,9 +309,48 @@
   .navBurger {
     left: 20px;
   }
+
+  @keyframes menuAnimate {
+    0% {
+      top: 30px;
+    }
+    10% {
+      top: 20px;
+    }
+    20% {
+      top: 30px;
+    }
+    30% {
+      top: 20px;
+    }
+    40% {
+      top: 30px;
+    }
+    50% {
+      top: 20px;
+    }
+    60% {
+      top: 30px;
+    }
+    70% {
+      top: 20px;
+    }
+    80% {
+      top: 30px;
+    }
+    90% {
+      top: 20px;
+    }
+    100% {
+      top: 30px;
+    }
+  }
 }
 
 @media screen and (max-width: 320px) {
+  .navBurger {
+    top: 30px;
+  }
   .overlay {
     .overlayMenu {
       right: 5vw;
