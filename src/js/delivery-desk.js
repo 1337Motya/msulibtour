@@ -27,7 +27,7 @@ pannellum.viewer('train_scene', {
                     "pitch": -5,
                     "yaw": 40,
                     "type": "scene",
-                    "text": "Лестница вниз",
+                    "text": "Лестница вниз к абонементу научной и художественной литературы",
                     "sceneId": "first_floor_corridor_start"
                 },
                 {
@@ -92,7 +92,7 @@ pannellum.viewer('train_scene', {
                     "pitch": 2,
                     "yaw": -11,
                     "type": "scene",
-                    "text": "Лестница наверх",
+                    "text": "Лестница наверх к абонементу учебной литературы",
                     "sceneId": "second_floor"
                 },
                 {
@@ -106,7 +106,7 @@ pannellum.viewer('train_scene', {
                     "pitch": -8,
                     "yaw": 180,
                     "type": "scene",
-                    "text": "Конец коридора",
+                    "text": "К читальному залу редких изданий",
                     "sceneId": "first_floor_corridor_end"
                 }
             ]
@@ -159,7 +159,7 @@ pannellum.viewer('train_scene', {
                     "pitch": -3,
                     "yaw": 1,
                     "type": "scene",
-                    "text": "Начало коридора",
+                    "text": "К абонементу научной и художественной литературы",
                     "sceneId": "first_floor_corridor_start"
                 },
                 {
