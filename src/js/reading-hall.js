@@ -149,7 +149,8 @@ pannellum.viewer('rd_scene', {
                     "pitch": 4,
                     "yaw": 42,
                     "type": "info",
-                    "text": "Фотовыставки. Экскурсии. Презентации"
+                    "text": "Фотовыставки. Экскурсии. Презентации",
+                    "URL": "https://library.msu.by/resursy/foto-art-vystavki"
                 }
             ]
         },
